@@ -1,5 +1,5 @@
 terraform {
-  source = "git::git@github.com:sudheerduba/aws-vpc-network-terraform.git//modules?ref=v1.2.0"
+  source = "github.com/EmrhT/aws-vpc-network-terraform?ref=1.0.0"
 }
 
 include "remote_state" {
@@ -7,7 +7,7 @@ include "remote_state" {
 }
 
 locals {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 inputs = {

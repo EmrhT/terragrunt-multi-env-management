@@ -1,5 +1,5 @@
 terraform {
-  source = "git::git@github.com:sudheerduba/aws-vpc-network-terraform.git//modules?ref=v1.2.0"
+  source = "github.com/EmrhT/aws-vpc-network-terraform?ref=1.0.0"
 }
 
 include "remote_state" {
@@ -7,11 +7,11 @@ include "remote_state" {
 }
 
 locals {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 
 inputs = {
-  environment       = "Developement"
+  environment       = "Development"
   eks_cluster_name  = "Dev-EKS-Demo"
   node_group_name   = "webapp-dev-01"
   node_role_name    = "NodeRole-dev"
