@@ -1,5 +1,5 @@
 terraform {
-  source = "github.com/EmrhT/aws-vpc-network-terraform?ref=1.0.0"
+  source = "github.com/EmrhT/aws-vpc-network-terraform"
 }
 
 include "remote_state" {
