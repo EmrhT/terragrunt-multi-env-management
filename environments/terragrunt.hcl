@@ -1,5 +1,5 @@
 locals {
-  account_id = "444469924026" # change in each environment in assumed roles executions
+  account_id = "444469924026" # change in each environment in assumed role's executions
 }
 
 generate "backend" {
